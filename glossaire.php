@@ -741,22 +741,12 @@ print_r($random);*/
 $quote = $glossaire[rand (0, count($glossaire)- 1)];
 $quoteTitle = $quote['title'];
 $quoteDescription = $quote['description'];
+if(!empty($_POST['envoyer'])) {
+    echo "<h1>".$quoteTitle."</h1><br>"."<h2>".$quoteDescription."</h2>";
+    // ou echo afficher();
+}
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Glossaire Opquast</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <blockquote>
-    <h1><?php echo $quoteTitle ?></h1>
-    <h2>&ldquo;<?php echo $quoteDescription ?>&rdquo;</h2>
-  </blockquote>
-  
-</body>
-</html>
+
 
 
 
