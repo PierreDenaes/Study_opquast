@@ -1,5 +1,13 @@
 <?php
-
+/*function arrayRandomAssoc($arr, $num = 1) {
+  $keys = array_keys($arr);
+  shuffle($keys);
+  $r = array();
+  for ($i = 0; $i < $num; $i++) {
+    $r[$keys[$i]] = $arr[$keys[$i]];
+  }
+  return $r
+  }*/
 $glossaire =
 [
     [
@@ -728,4 +736,27 @@ $glossaire =
         "Schématisation minimale d’une page web sous forme de blocs ou boîtes afin de déterminer et de répartir les grandes fonctionnalités et les zones principales de son contenu, indépendamment de leurs dimensions, de leurs proportions ou de leur design final."
     ]
   ];
+/*$random = array_rand($glossaire);
+print_r($random);*/
+$quote = $glossaire[rand (0, count($glossaire)- 1)];
+$quoteTitle = $quote['title'];
+$quoteDescription = $quote['description'];
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Glossaire Opquast</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <blockquote>
+    <h1><?php echo $quoteTitle ?></h1>
+    <h2>&ldquo;<?php echo $quoteDescription ?>&rdquo;</h2>
+  </blockquote>
   
+</body>
+</html>
+
+
+

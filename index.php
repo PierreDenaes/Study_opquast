@@ -1,13 +1,17 @@
 <?php 
-include 'db.php';
+include 'glossaire.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Glossaire Opquast</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<blockquote>
+		<h2>&ldquo;<?php echo $quoteDescription ?>&rdquo;</h2>
+	</blockquote>
 	
 </body>
 </html>
