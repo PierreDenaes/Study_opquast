@@ -1,0 +1,31 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+.randomQ {
+	text-align: center;
+	padding: 2%;
+}
+.quoteArea {
+	border: 1px solid black;
+	width: 50%;
+	height: 300px;
+	margin: 2% auto;
+	padding: 2%;
+	overflow: scroll;
+	border-radius: 50px 0 0 0;
+	text-align: left;
+}
+input #reload {
+	width: 50px;
+	height: 30px;
+}
+.styleButton {
+	font-size: 3em;
+	padding: 2%;
+	border-radius: 15px;
+	background-color: yellow;
+}
+.styleButton:hover {
+	background-color: red;
+}

@@ -9,11 +9,17 @@ include 'glossaire.php';
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <blockquote>
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-    <input type="submit" id="envoyer" name="envoyer" value="envoyer">
-<form>
-  </blockquote>
-  
+	<div class="randomQ">
+	    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+	    <button type="submit" id="reload" name="reload" value="Reload" class="styleButton">New Rules</button>
+		<form>
+		<blockquote class="quoteArea">
+<?php
+if(!empty($_POST['reload'])) {
+	echo "<h1>".$quoteTitle."</h1><br>"."<h2>".$quoteDescription."</h2>";   
+	}
+?>
+		</blockquote>
+  	</div>
 </body>
 </html>
